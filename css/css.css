@@ -1,0 +1,1652 @@
+body{
+  font-family: 'Open sans';
+  font-weight: 300;
+}
+a{
+  color: #fff;  
+}
+a:hover{
+  color: #fff;
+}
+#containerAll{
+  background-color: #1790a1;
+  padding: 0px;
+}
+#containerAll2{
+  background-color: #fff;
+}
+/*formataÃ§Ã£o de pÃ¡gina*/
+#containerConteudo{
+  padding: 0px;
+}
+#containerRodape{
+  padding: 0px;
+}
+#containerSidebar{
+  padding: 0px;
+}
+#containerCards{
+  padding-right: 45px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 35px;
+  background-color: #fff;
+  float:right;
+  min-height:102vh;
+}
+[class*="col-"]{
+   padding: 0px;
+}
+#containerFoto{
+  height: 50px;
+  padding-left: 5px;
+  padding-left: 5px;
+}
+#containerSidebar{
+  position:fixed;
+}
+/*estilos*/
+/*barra lateral*/
+#sidebar{
+  color: #fff;
+  background-color: #1790a1;
+  margin: 0px;
+  padding: 0px;
+}
+#sidebar img{
+  width:50px;
+  float:left;
+  margin-right:10px;
+}
+#containerIcone{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #25616b;
+  width: 100%; 
+  color:#fff;
+  text-align: center;
+}
+#logo{
+  background-image: url(imagens/LOGO.png);
+  transition: 0.5s;
+  width: 105px;
+  height: 129px;
+  margin-right:auto; 
+  margin-left:auto;
+  margin-top: 10px;
+}
+#containerIcone:hover #logo{
+  background-image: url(imagens/LOGOhover.png);
+}
+#home{
+  text-decoration: none;
+}
+#listaSidebar{
+  margin: 0px;
+  padding: 0px;
+}
+#listaSidebar li{
+  list-style-type: none;
+  display: block;
+  padding-left: 10px;
+  padding-bottom:7px;
+  padding-top:3px;  
+  font-size: 20px;
+  transition: 0.5s;
+  line-height: 35px;
+}
+#listaSidebar li:hover{
+  background-color: #4fa7b3;
+}
+#listaSidebar li a{
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+li#menuHamburger{
+  display:none;
+}
+#hamburger{
+  width:40px;
+}
+#dropdownTurmas{
+  display: none;
+  font-size: 15px;
+}
+#inputTurmaNomeDropdown{
+  background-color: #1790a1;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+#inputTurmaNomeDropdown:hover{
+  background-color: #4fa7b3;
+}
+/*Card de Perfil de usuÃ¡rio*/
+
+#cardPerfil{
+  float: right;
+  width: 100%;
+}
+#cardPerfil a{
+  color: #000;
+  text-decoration:'none';
+}
+#cardPerfil a:hover{
+  text-decoration: underline;
+}
+#textoPerfil{
+  text-align: right;
+  padding-top: 10px;
+}
+#fotoPerfil{
+  float: right;
+  padding-top: 10px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+#fotoPerfil img{
+  width:60px;
+  text-align: right;
+}
+#modalEditarPerfil{
+  position:absolute;
+  display:none;
+  background: #1790a1;
+  z-index: 10;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  width:400px;
+  height:400px;
+  color:#fff;
+}
+.fechar {
+}
+.fechar:hover { background: #25616b; }
+/*Cards de conteudo*/
+.cardConteudo{
+  position:relative;
+  margin-left: 30px;
+  padding: 0px;
+  margin-top: 30px;
+  background-color: #1790a1;
+  color: #fff;
+  padding-bottom: 25px;
+  text-align:center;
+  min-height:351px;
+}
+.infoCardConteudo{
+  min-height:116px;
+}
+.textoCard{
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.botaoComecar{
+  border-width: 2px;
+  border-style: solid;
+  outline: none;
+  padding-bottom: 2px;
+  padding-right: 40px;
+  padding-left: 40px;
+  background-color:#1790a1;
+  color: #fff;
+  border-color: #fff; 
+  font-size: 13pt;
+  transition: 0.2s;
+}
+.botaoComecar:hover{
+  background-color: #fff;
+  color: #1790a1; 
+}
+/*placeholder dos Ã­cones*/
+.imgPlaceholder{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #25616b;
+  width: 100%;
+}
+/*INDEX DESLOGADO*/
+#cardLogar{  
+  float:right;
+}
+#cardLogar a{  
+  text-decoration:none;
+}
+#botaoLogin{
+  border-width: 0px;
+  border-style: solid;
+  outline: none;
+  padding-bottom: 2px;
+  padding-right: 40px;
+  padding-left: 40px;
+  background-color:#1790a1;
+  color: #fff;
+  border-color: #fff; 
+  font-size: 13pt;
+  transition: 0.2s;
+}
+#formLogin{
+  display:none;
+  position:absolute;
+  background-color:#1790a1;
+  color:#fff;
+  z-index:1;
+  margin-right:30px;
+  margin-left:-30px;
+  margin-top:0px;
+  padding:5px 0px 5px 10px;
+}
+#formLogin input{
+  color:#000;
+  outline: none;
+}
+#formLoginCadastro{
+  font-size: 10pt;
+  margin-top:5px;
+  float:left;
+}
+#cadastreseA{
+  cursor:pointer;  
+}
+#formLoginCadastro a:hover{
+  text-decoration:underline;
+}
+#botaoLogar{
+  border-width: 1px;
+  border-style: solid;
+  border-color:#fff;
+  float:right;
+  outline: none;
+  padding-bottom: 2px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color:#1790a1;
+  color: #fff; 
+  transition: 0.2s;
+  margin-top:5px;
+  margin-right:25px;
+}
+#botaoLogar:hover{
+  background-color:#25616b;
+}
+#fundoModalCadastro{
+  background-color: rgba(1,1,1,0.2);
+  display:none;
+  z-index: 1;
+  top:0;
+  left:0;
+  position:fixed;
+  width:100vw;
+  height:100vh;
+}
+#modalCadastro{
+  top:50px;
+  left:40%;
+  position:fixed;
+  display:none;
+  background: #1790a1;
+  z-index: 2;
+  transition: 0.2s;
+  width:300px;
+  height:390px;
+  color:#fff;
+}
+#modalCadastro form{
+  float:left;
+  margin-left:70px;
+  margin-top:10px;
+}
+#modalCadastro label{
+  cursor:pointer;
+}
+#modalCadastro input{
+  cursor:pointer;
+  color:#222;
+  outline:none;
+  margin-bottom:4px;
+}
+#confirmarSenha{
+  margin-bottom:5px;
+}
+#escolherFotoButton{
+  border-width: 1px;
+  border-style: solid;
+  border-color:#fff;
+  outline: none;
+  text-align:center;
+  transition: 0.2s;
+  background-color:#1790a1;
+  padding: 6px 25px 6px 25px;
+  margin: auto;
+}
+#escolherFotoButton:hover{
+  background-color:#fff;
+  color:#1790a1;
+}
+/*input[type='file'] {
+  display: block;
+}*/
+.fechar {
+  cursor:pointer;
+  float:right;
+  padding: 2px 7px 2px 7px;
+}
+.fechar:hover { 
+  background: #25616b; 
+  text-decoration:none;
+  transition:0.4s;
+}
+#botaoCadastro{
+  border-width: 1px;
+  border-style: solid;
+  border-color:#fff;
+  text-align:center;
+  outline: none;
+  padding-bottom: 2px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color:#1790a1;
+  color: #fff; 
+  transition: 0.2s;
+  margin-top:5px;
+  margin-left:22px;
+}
+#botaoCadastro:hover{
+  background-color:#25616b;
+}
+/* PÃ¡gina de ConteÃºdos */
+#conteudoTitle{
+  color: #7F7F7F;
+  width:40%;
+  min-width:194px;
+  border-bottom: 3px solid;
+  border-color: #CCCCCC;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size:30pt;
+}
+.containerMateria{
+  margin-left: 15px;
+  margin-bottom: 10px;
+  padding-left:30px;
+  padding-top:5px;
+  padding-bottom:5px;
+  border:3px solid;
+  border-color: #999;
+  font-size: 20px;
+  color: #444;
+  padding-left: 10px;
+}
+.botaoConteudo{
+  border-width: 0px;
+  border-style: none;
+  outline: none;
+  margin-right: 3px;
+  padding-bottom: 4px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color:#1790a1;
+  color: #fff;
+  border-color: #1790a1; 
+  font-size: 13pt;
+  transition: 0.2s;
+  display:inline;
+  float:right;
+}
+.botaoConteudo:hover{
+  background-color: #25616b;
+}
+
+/*AULA*/
+#topoAula{
+  background-color: #1F424B;
+  color: #ffffff;
+  font-weight: 50;
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+}
+#logoAula{
+  width: 75px;
+    margin-right:auto; 
+    margin-left:auto;
+    margin-top: 10px;
+}
+#titAula{
+  font-size: 30pt;
+}
+#subTitAula{
+  font-size: 11.8pt;
+}
+#contAula{
+  background-color: #ecf0f1;
+  color: #000000;
+}
+#textoAula{
+  background-color: #E2E2E2;
+  padding-top: 3%;
+  padding-bottom: 5%;
+  font-family: 'Verdana';
+  font-weight: 200;
+  font-size: 12pt;
+}
+#titTopicoAula{
+  background-color: #2F7984;
+  color: #ffffff;
+  width: 50%;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 5px;
+  margin-top: 25px;
+  box-shadow: 15px 8px 0px #1F424B;
+}
+.paragrafoAula{
+  margin-right: 9%;
+  margin-left: 9%;
+  margin-top: 35px;
+}
+.imgAula{
+    max-width: 1080px;   /* MÃ¡ximo da largura da imagem */
+    width: 50%;
+    max-height: 500px;  /* MÃ¡ximo da altura da imagem */
+    min-height: auto;      /* MÃ­nimo da altura, por padrÃ£o â€œautoâ€ */
+    background-size:100%;
+    background-repeat: no-repeat;
+ }
+#botaoAnteriorAula{
+  background-color: #1F424B;
+  color: #ffffff;
+  width: 20%;
+  float: left;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 5px;
+  margin-top: 25px;
+  text-align: center;
+  box-shadow: 15px 8px 0px #2F7984;
+}
+#botaoProximoAula{
+  background-color: #1F424B;
+  color: #ffffff;
+  width: 20%;
+  float: right;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 5px;
+  margin-top: 25px;
+  text-align: center;
+  box-shadow: -15px 8px 0px #2F7984;
+}
+/*Pefil*/
+#containerPerfil{
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 10px;
+  background-color: #fff;
+  padding-bottom: 35px;
+  float:right;
+  min-height:102vh;
+}
+#cardInfoUsuario a{
+  color: #7F7F7F;
+  font-weight: bold;
+}
+#cardInfoUsuario img{
+  width:230px;
+}
+#fundoModalEditarPerfil{
+  background-color: rgba(1,1,1,0.2);
+  display:none;
+  z-index: 1;
+  top:0;
+  left:0;
+  position:fixed;
+  width:100vw;
+  height:100vh;
+}
+#modalEditarPerfil{
+  top:50px;
+  left:40%;
+  position:fixed;
+  display:none;
+  background: #1790a1;
+  z-index: 2;
+  transition: 0.2s;
+  width:300px;
+  height:340px;
+  color:#fff;
+}
+#modalEditarPerfil form{
+  float:left;
+  margin-left:70px;
+  margin-top:10px;
+}
+#modalEditarPerfil input{
+  color:#222;
+  outline:none;
+}
+.fechar {
+  cursor:pointer;
+  float:right;
+  padding: 2px 7px 2px 7px;
+}
+.fechar:hover { 
+  background: #25616b; 
+  text-decoration:none;
+  transition:0.4s;
+}
+#editarSenha02{
+  margin-bottom:5px;
+}
+#botaoEditarPerfil{
+  border-width: 1px;
+  border-style: solid;
+  border-color:#fff;
+  text-align:center;
+  outline: none;
+  padding-bottom: 2px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color:#1790a1;
+  color: #fff; 
+  transition: 0.2s;
+  margin-top:5px;
+  margin-left:16px;
+}
+
+#botaoEditarPerfil:hover{
+  background-color:#25616b;
+}
+#fundoModalEntrarTurma{
+  background-color: rgba(1,1,1,0.2);
+  display:none;
+  z-index: 1;
+  top:0;
+  left:0;
+  position:fixed;
+  width:100vw;
+  height:100vh;
+}
+#modalEntrarTurma{
+  top:50px;
+  left:40%;
+  position:fixed;
+  display:none;
+  background: #1790a1;
+  z-index: 2;
+  transition: 0.2s;
+  width:300px;
+  height:100px;
+  color:#fff;
+}
+#modalEntrarTurma form{
+  float:left;
+  margin-left:70px;
+  margin-top:10px;
+}
+#modalEntrarTurma input{
+  color:#222;
+  outline:none;
+}
+#codigoEntrarTurma{
+  margin-bottom:5px;
+}
+#botaoEntrarTurma{
+  border-width: 1px;
+  border-style: solid;
+  border-color:#fff;
+  text-align:center;
+  outline: none;
+  padding-bottom: 2px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color:#1790a1;
+  color: #fff; 
+  transition: 0.2s;
+  margin-top:5px;
+  margin-left:3px;
+}
+#botaoEntrarTurma:hover{
+  background-color:#25616b;
+}
+#fundoModalCriarTurma{
+  background-color: rgba(1,1,1,0.2);
+  display:none;
+  z-index: 1;
+  top:0;
+  left:0;
+  position:fixed;
+  width:100vw;
+  height:100vh;
+}
+#modalCriarTurma{
+  top:50px;
+  left:40%;
+  position:fixed;
+  display:none;
+  background: #1790a1;
+  z-index: 2;
+  transition: 0.2s;
+  width:300px;
+  height:100px;
+  color:#fff;
+}
+#modalCriarTurma form{
+  float:left;
+  margin-left:70px;
+  margin-top:10px;
+}
+#modalCriarTurma input{
+  color:#222;
+  outline:none;
+}
+#nomeCriarTurma{
+  margin-bottom:5px;
+}
+#botaoCriarTurma{
+  border-width: 1px;
+  border-style: solid;
+  border-color:#fff;
+  text-align:center;
+  outline: none;
+  padding-bottom: 2px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color:#1790a1;
+  color: #fff; 
+  transition: 0.2s;
+  margin-top:5px;
+  margin-left:3px;
+}
+#botaoCriarTurma:hover{
+  background-color:#25616b;
+}
+#fundoModalEditarTurma{
+  background-color: rgba(1,1,1,0.2);
+  display:none;
+  z-index: 1;
+  top:0;
+  left:0;
+  position:fixed;
+  width:100vw;
+  height:100vh;
+}
+#modalEditarTurma{
+  top:50px;
+  left:40%;
+  position:fixed;
+  display:block;
+  background: #1790a1;
+  z-index: 2;
+  transition: 0.2s;
+  width:300px;
+  height:100px;
+  color:#fff;
+}
+#modalEditarTurma form{
+  float:left;
+  margin-left:70px;
+  margin-top:10px;
+}
+#modalEditarTurma input{
+  color:#222;
+  outline:none;
+}
+#nomeEditarTurma{
+  margin-bottom:5px;
+}
+#botaoEditarTurma{
+  border-width: 1px;
+  border-style: solid;
+  border-color:#fff;
+  text-align:center;
+  outline: none;
+  padding-bottom: 2px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color:#1790a1;
+  color: #fff; 
+  transition: 0.2s;
+  margin-top:5px;
+  margin-left:3px;
+}
+#botaoEditarTurma:hover{
+  background-color:#25616b;
+}
+#cardInfoUsuario h3{
+  color: #696969;
+  font-size:25pt;
+}
+#dominio h5{
+  color: #B2B2B2;
+  font-weight: bold;
+}
+#cardDominioPerfil{
+  margin-top:60px;
+  color: #7F7F7F;
+  font-weight: bold;
+}
+#cardDominioPerfil img{
+  width: 25px;
+  margin-top:2px;
+  margin-bottom:2px;
+}
+#cardDominioPerfil h4{
+  color:#696969;
+  font-size: 20pt;
+}
+#cardTurmasPerfil{
+  margin-top:60px;
+  font-size:14pt;
+}
+#cardTurmasPerfil h4{
+  color:#696969;
+  font-size: 20pt;
+}
+#cardTurmasPerfil a{
+  color: #7F7F7F;
+}
+#cardTurmasPerfil a.aPerfilTurma{
+  color:#696969;
+  font-size:12pt;
+  font-weight:bold;
+  cursor: pointer;
+}
+#cardTurmasPerfil a.form{
+  color:#696969;
+  font-size:12pt;
+  font-weight:bold;
+}
+#tdPerfilNomeTurma{
+  width: 230px;
+}
+#inputTurmaNome{
+  background-color: #fff;
+  border-style: none;
+  border-width: none;
+  outline: none;
+}
+#inputTurmaUpdate{
+  background-color: #fff;
+  border-style: none;
+  border-width: none;
+  outline: none;
+}
+#inputTurmaDelete{
+  background-color: #fff;
+  color:#f00;
+  font-weight: bold;
+  border-style: none;
+  border-width: none;
+  outline: none;
+}
+#inputTurmaNome, #inputTurmaUpdate, #inputTurmaDelete{
+  padding: 0px;
+}
+#inputTurmaNome:hover, #inputTurmaUpdate:hover, #inputTurmaDelete:hover{
+  text-decoration: underline;
+}
+#perfilTurmasTable{
+  margin-top: -28px;
+  border:none;
+  padding: 0px;
+}
+
+/*CADASTRO QUESTÃƒO*/
+#containerCadastroQuestao{
+  padding-right: 45px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 35px;
+  background-color: #fff;
+  float:right;
+  min-height:102vh;
+}
+#cadastroQuestaoTitle{
+  color: #7F7F7F;
+  width:40%;
+  min-width:194px;
+  border-bottom: 3px solid;
+  border-color: #CCCCCC;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left:30px;
+  font-size:30pt;
+}
+#formCadastroQuestao{
+  margin-left:15px;
+  font-size:15pt;
+}
+.textAreaCadatroQuestao{
+  width:400px;
+  resize:none;
+}
+#textAreaEnunciadoQuestao{
+  height:200px;
+}
+#botaoConfirmar{
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color:#fff;
+  color: #2F7884;
+  border-color: #2F7884; 
+  font-size: 15pt;
+  transition: 0.2s;
+  width:200px;
+}
+#botaoConfirmar:hover{
+  transition:0.4s;
+  color:#fff;
+  background-color: #2F7884;
+}
+#formCadastroQuestao select{
+  width:220px;
+}
+
+
+/*Desempenho*/
+iframe{
+  width:200px;
+  height:200px;
+  border:none;
+}
+#containerDesempenho {
+  padding: 10px 45px 35px 30px;
+  background-color: #fff;
+  min-height:102vh;
+  float:right;
+  min-height:102vh;
+}
+#containerDesempenho h1{
+  color: #7F7F7F;
+  font-weight: 400;
+  font-size: 35pt;
+}
+#desempenhoTitle{
+  width:40%;
+  min-width:194px;
+  border-bottom: 3px solid;
+  border-color: #CCCCCC;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#desempenhoTitle h1{
+  font-size:30pt;
+}
+[id$="barraConteudo"]{
+  cursor:pointer;
+  border: 3px solid;
+  border-color: #CCC;
+  font-size: 15pt;
+  font-weight: bold;
+  color: #7F7F7F;
+  padding: 5px 0px 5px 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.barraConteudo:hover{
+  border-color:#aaa;
+  transition:0.5s;
+}
+#barraConteudo1{
+  cursor:pointer;
+  border: 3px solid;
+  border-color: #CCC;
+  font-size: 15pt;
+  font-weight: bold;
+  color: #7F7F7F;
+  padding: 5px 0px 5px 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#barraConteudo1:hover{
+  border-color:#aaa;
+  transition:0.5s;
+}
+#barraConteudo2{
+  cursor:pointer;
+  border: 3px solid;
+  border-color: #CCCCCC;
+  font-size: 15pt;
+  font-weight: bold;
+  color: #7F7F7F;
+  padding: 5px 0px 5px 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#barraConteudo2:hover{
+  border-color:#aaa;
+  transition:0.5s;
+}
+#barraConteudo3{
+  cursor:pointer;
+  border: 3px solid;
+  border-color: #CCCCCC;
+  font-size: 15pt;
+  font-weight: bold;
+  color: #7F7F7F;
+  padding: 5px 0px 5px 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#barraConteudo3:hover{
+  border-color:#aaa;
+  transition:0.5s;
+}
+#barraConteudo1, #barraConteudo2, #barraConteudo3, #barraConteudoEspecificacoes1, #barraConteudoEspecificacoes2,  #barraConteudoEspecificacoes3{
+  margin-left:0px;
+  margin-right:-15px;
+} 
+.botaoDesempenho{
+  width:22px;
+}
+.barraConteudoEspecificacoes1{
+  font-weight: bold;
+  display:none;
+}
+.barraConteudoEspecificacoes2{
+  font-weight: bold;
+  display:none;
+}
+.barraConteudoEspecificacoes3{
+  font-weight: bold;
+  display:none;
+}
+#barraConteudoAtividade{
+  border-bottom: 1.5px solid;
+  border-color: #CCCCCC;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-left: 0px;
+  margin-right: -15px;
+  text-align:center;
+}
+#barraConteudoAtividadeEspec{
+  color: #1F424B;
+}
+#barraConteudoAtividadePerf{
+  color: #2F7884;
+}
+#barraConteudoAtividadeDica{
+  color: #2F7884;
+}
+#barraConteudoAtividadeErros{
+  color: #7F7F7F;
+}
+#barraConteudoResultados{
+  font-size: 25pt;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left:0px;
+}
+#barraConteudoResultadosPerf{
+  color: #1F424B;
+}
+#barraConteudoResultadosDica{
+  color: #2F7884;
+}
+#barraConteudoResultadosErros{
+  color: #7F7F7F;
+}
+#barraConteudoComentarios{
+  margin-left:0px;
+  text-align:center;
+}
+#barraConteudoComentarios img{
+  width:160px;
+  margin-top:5px;
+  margin-bottom:15px;
+}
+#containerDesempenho h2{
+  font-size: 20pt;
+  color: #1F424B;
+}  
+#containerDesempenho h3{
+  font-size: 11.5pt;
+  color: #2F7884;
+}  
+/*Cadastro*/
+#containerCadastro{
+  padding-right: 45px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 35px;
+  background-color: #fff;
+  float:right;
+  font-size: 12pt;
+  min-height:102vh;
+}
+#cadastroTitle{
+  border-bottom: 3px solid;
+  border-color: #CCCCCC;
+  margin: 20px 0px 30px 0px;
+}
+#containerCadastro select{
+  width: 225px;
+}
+label{
+  font-weight: 100;
+}
+.botaoCadastro{
+  border-width: 0px;
+  padding-bottom: 2px;
+  padding-right: 70px;
+  padding-left: 70px;
+  margin-top: 20px;
+  background-color: #1F424B;
+  color: #fff;
+  border-color: #fff; 
+  font-size: 20pt;
+  transition: 0.2s;
+}
+.botaoCadastro:hover{
+  background-color: #25616b;
+}
+/*Editar Perfil*/
+#containerEditarPerfil{
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 10px;
+  background-color: #fff;
+  padding-bottom: 35px;
+  float:right;
+  min-height:102vh;
+}
+#infoUsuarioEditarPerfilEsq img {
+  width:93%;
+  max-width: 258px;
+}
+#infoUsuarioEditarPerfilEsq a{
+  color: #1F424B;
+  font-weight: bold;
+}
+#infoUsuarioEditarPerfilDir{
+  font-weight: bold;
+  margin-top: -10px;
+  margin-bottom: 63px;
+}
+#infoUsuarioEditarPerfilDir h5{
+  color: #7F7F7F;
+  font-weight: bold;
+}
+#infoUsuarioEditarPerfilDir a{
+  color:#1F424B;
+  font-weight: bold;
+  margin-top: -10px;
+}
+#botaoAlterarSenha{
+  border-width: 0px;
+  padding-bottom: 2px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-top: 5px;
+  margin-left: 128px;
+  background-color: #1F424B;
+  color: #fff;
+  border-color: #fff; 
+  font-size: 12pt;
+  transition: 0.2s;
+  border:#666666;
+}
+#botaoAlterarSenha:hover{
+  background-color: #25616b;
+  background-color: #25616b;
+}
+#infosAdicionais h3#status{
+  color:#549A98;
+}
+#infosAdicionais h3{
+  color:#666666;
+}
+/*ATIVIDADE*/
+#topoAtividade{
+  background-color: #1F424B;
+  color: #ffffff;
+  font-weight: 50;
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+}
+#logoAtividade{
+  width: 85px;
+  transition: 0.5s;
+}
+#titAtividade{
+  font-size: 25pt;
+}
+#statusAtividade{
+  margin-top:20px;
+}
+#cardQuestao{
+  margin-left:7%;
+  margin-right:7%;
+  margin-top:3%;
+  margin-bottom:3%;
+  padding:30px 150px 0px 150px;
+  border:1px solid #7F7F7F;
+  font-size:13pt;
+  color:#000;
+}
+#cardResultado{
+  text-align: center;
+  margin-left:7%;
+  margin-right:7%;
+  margin-top:3%;
+  margin-bottom:3%;
+  padding:30px 150px 0px 150px;
+  border:1px solid #7F7F7F;
+  font-size:13pt;
+  color:#000;
+}
+.linkVoltar{
+  color: #1F424B;
+}
+.linkVoltar:hover{
+  color: #1F424B;
+}
+img#migalhas{
+  width:100%;
+  margin-top:40px;
+  margin-bottom:20px;
+}
+#questaoTitle{
+  border-bottom: 1px solid;
+  border-color: #CCCCCC;
+  margin: 20px 0px 30px 0px;
+  color: #2F7884;
+  font-size:24pt;
+}
+#alternativas{
+  margin-top:20px;
+  margin-bottom:0px;
+  width:100%;
+  cursor:pointer;
+}
+#alternativaA, #alternativaB, #alternativaC, #alternativaD{
+  margin-left:40px;
+}
+#alternativas td{
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.alternativaInput{
+  display:none;
+}
+.alternativa{
+  border-bottom: 2px solid;
+  border-color: #AAA;
+}
+#cardQuestaoBotoes{
+  padding-top: 15px;
+  margin-bottom:55px;
+}
+#cardQuestaoBotoes button#botaoConfirmar{
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color:#fff;
+  color: #2F7884;
+  border-color: #2F7884; 
+  font-size: 15pt;
+  transition: 0.2s;
+  width:200px;
+  float:right;
+}
+#cardQuestaoBotoes button#botaoConfirmar:hover{
+  background-color: #2F7884;
+  color: #fff; 
+}
+
+.botaoExercicios{
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color:#fff;
+  color: #2F7884;
+  border-color: #2F7884; 
+  font-size: 15pt;
+  transition: 0.2s;
+  width:200px;
+  float:right;
+}
+.botaoExercicios:hover{
+  background-color: #2F7884;
+  color: #fff; 
+}
+
+#botaoVerificar{
+  display: none;  
+}
+#imagemEnunciado{
+  width:500px;
+}
+/*TURMA*/
+#containerTurma{
+  padding-right: 45px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 35px;
+  background-color: #fff;
+  float:right;
+  min-height:102vh;
+}
+#turmaTitle{
+  color: #7F7F7F;
+  width:40%;
+  min-width:194px;
+  border-bottom: 3px solid;
+  border-color: #CCCCCC;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left:30px;
+  font-size:30pt;
+}
+#opcoesTurma{
+  margin-top:50px;
+  margin-left:15px;
+}
+#opcoesTurma h3{
+  font-weight:bold;
+}
+#opcoesTurma a{
+  color:#7F7F7F;
+  cursor:pointer;
+}
+#membrosTurma{
+  margin-top:40px;
+}
+#infoUsuarioTurma{
+  font-size:15pt;
+  margin-left:15px;
+  margin-top:10px;
+  padding-bottom:10px;
+  border-bottom: 2px solid;
+  border-color: #CCCCCC;
+}
+#infoUsuarioTurma img{
+  width:50px;
+}
+.infoUsuarioTurma{
+  font-size:15pt;
+  margin-left:45px;
+  margin-top:10px;
+  padding-bottom:10px;
+  border-bottom: 1.5px solid;
+  border-color: #CCCCCC;
+}
+.infoUsuarioTurma img{
+  width:50px;
+}
+.nomeUsuarioTurma, .statusUsuarioTurmaProf, .statusUsuarioTurmaAluno{
+  padding-top:10px;
+}
+.nomeUsuarioTurma{
+  color:#666;
+  font-weight:bold;
+}
+.statusUsuarioTurmaProf{
+  color: #1F424B;
+  font-weight:bold;
+}
+.statusUsuarioTurmaAluno{
+  color: #666;
+  font-weight:bold;
+}
+#desempenhoTurma{
+  display:none;
+}
+/*CADASTRO QUESTÃƒO*/
+#containerCadastroQuestao{
+  padding-right: 45px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 35px;
+  background-color: #fff;
+  float:right;
+  min-height:102vh;
+}
+#cadastroQuestaoTitle{
+  color: #7F7F7F;
+  width:40%;
+  min-width:194px;
+  border-bottom: 3px solid;
+  border-color: #CCCCCC;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left:30px;
+  font-size:30pt;
+}
+#formCadastroQuestao{
+  margin-left:15px;
+  font-size:15pt;
+}
+.textAreaCadatroQuestao{
+  width:400px;
+  resize:none;
+}
+#textAreaEnunciadoQuestao{
+  height:200px;
+}
+/*#botaoConfirmar{
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color:#fff;
+  color: #2F7884;
+  border-color: #2F7884; 
+  font-size: 15pt;
+  transition: 0.2s;
+  width:200px;
+}
+#botaoConfirmar:hover{
+  transition:0.4s;
+  color:#fff;
+  background-color: #2F7884;
+}*/
+#formCadastroQuestao select{
+  width:220px;
+}
+
+/*CADASTRO ASSUNTOS*/
+
+#fundoModalEditarAssunto{
+  background-color: rgba(1,1,1,0.2);
+  display:none;
+  z-index: 1;
+  top:0;
+  left:0;
+  position:fixed;
+  width:100vw;
+  height:100vh;
+}
+#modalEditarAssunto{
+  top:50px;
+  left:40%;
+  position:fixed;
+  display:none;
+  background: #1790a1;
+  z-index: 2;
+  transition: 0.2s;
+  width:300px;
+  height:390px;
+  color:#fff;
+}
+#modalEditarAssunto form{
+  float:left;
+  margin-left:70px;
+  margin-top:10px;
+}
+#modalEditarAssunto label{
+  cursor:pointer;
+}
+#modalEditarAssunto input{
+  cursor:pointer;
+  color:#222;
+  outline:none;
+  margin-bottom:4px;
+}
+.fechar {
+  cursor:pointer;
+  float:right;
+  padding: 2px 7px 2px 7px;
+}
+.fechar:hover { 
+  background: #25616b; 
+  text-decoration:none;
+  transition:0.4s;
+}
+a#aEditarAssunto {
+        color: #337ab7;
+}
+
+/*CADASTRAR QUESTÕES*/
+
+#fundoModalEditarQuestão{
+  background-color: rgba(1,1,1,0.2);
+  display:none;
+  z-index: 1;
+  top:0;
+  left:0;
+  position:fixed;
+  width:100vw;
+  height:100vh;
+}
+#modalEditarQuestão{
+  top:50px;
+  left:40%;
+  position:fixed;
+  display:none;
+  background: #1790a1;
+  z-index: 2;
+  transition: 0.2s;
+  width:300px;
+  height:390px;
+  color:#fff;
+  overflow: scroll;
+}
+#modalEditarQuestão form{
+  float:left;
+  margin-left:70px;
+  margin-top:10px;
+}
+#modalEditarQuestão label{
+  cursor:pointer;
+}
+#modalEditarQuestão input{
+  cursor:pointer;
+  color:#222;
+  outline:none;
+  margin-bottom:4px;
+}
+.fechar {
+  cursor:pointer;
+  float:right;
+  padding: 2px 7px 2px 7px;
+}
+.fechar:hover { 
+  background: #25616b; 
+  text-decoration:none;
+  transition:0.4s;
+}
+a#aEditarQuestão {
+        color: #337ab7;
+}
+
+ol.progtrckr {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    ol.progtrckr li {
+        display: inline-block;
+        text-align: center;
+        line-height: 3em;
+    }
+
+    ol.progtrckr[data-progtrckr-steps="2"] li { width: 39%; }
+    ol.progtrckr[data-progtrckr-steps="3"] li { width: 33%; }
+    ol.progtrckr[data-progtrckr-steps="4"] li { width: 24%; }
+    ol.progtrckr[data-progtrckr-steps="5"] li { width: 9.5%; }
+    ol.progtrckr[data-progtrckr-steps="6"] li { width: 16%; }
+    ol.progtrckr[data-progtrckr-steps="7"] li { width: 14%; }
+    ol.progtrckr[data-progtrckr-steps="8"] li { width: 12%; }
+    ol.progtrckr[data-progtrckr-steps="9"] li { width: 11%; }
+
+    ol.progtrckr li.progtrckr-done {
+        color: black;
+        border-bottom: 4px solid #1790a1;
+        margin-left: -5px;
+    }
+    ol.progtrckr li.progtrckr-todo {
+        color: silver; 
+        border-bottom: 4px solid silver;
+        margin-left: -5px;
+    }
+    ol.progtrckr li.progtrckr-failed {
+        color: black; 
+        border-bottom: 4px solid silver;
+        margin-left: -5px;
+    }
+    
+
+    ol.progtrckr li:after {
+        content: "\00a0\00a0";
+    }
+    ol.progtrckr li:before {
+        position: relative;
+        bottom: -2.5em;
+        float: left;
+        left: 43%;
+        line-height: 1em;
+    }
+    ol.progtrckr li.progtrckr-done:before {
+        content: "\2713";
+        color: white;
+        background-color: #1790a1;
+        height: 1.2em;
+        width: 1.2em;
+        line-height: 1.2em;
+        border: none;
+        border-radius: 1.2em;
+    }
+    ol.progtrckr li.progtrckr-todo:before {
+        content: "\039F";
+        color: silver;
+        background-color: white;
+        font-size: 1.5em;
+        bottom: -1.6em;
+    }
+    ol.progtrckr li.progtrckr-failed:before {
+        content: "✘";
+        color: white;
+        background-color: silver;
+        font-size: 1.0em;
+        bottom: -2.5em;
+        height: 1.2em;
+        width: 1.2em;
+        line-height: 1.2em;
+        border: none;
+        border-radius: 1.2em;
+    }
+
+#PorcentagemResultado{
+  color: #1790a1;
+  display: inline-block;
+}
+
+@media screen and (max-width: 991px) {
+  li#menuHamburger{
+    display:block;
+  }
+  #hamburger{
+    display:block;
+  }
+  #menuItens{
+    display:none;
+    text-align:center;
+  }
+  #sidebar img{
+    width:50px;
+    float:none;
+    margin-right:10px;
+  }
+  #containerSidebar{
+    position:relative;
+  }  
+  #containerCards, #containerPerfil, #containerEditarPerfil, #containerCadastro, #containerDesempenho, #containerTurma, #containerCadastroQuestao{
+    float:none;
+  }
+  #cardDominioPerfil{
+    margin-left:40px;
+  }  
+  #cardDominioPerfil h4{
+    font-size: 18pt;
+  }
+  #cardTurmasPerfil{
+    font-size:12pt;
+  }
+  #cardTurmasPerfil h4{
+    font-size: 18pt;
+  }
+  #cardQuestao{
+    padding:0px 100px 0px 100px;
+    }
+  #opcoesTurma{
+    margin-top:0px;
+  }
+  #imagemEnunciado{
+    width: 420px; 
+  }
+}
+@media screen and (max-width: 767px) {
+  #cardInfoUsuario img{
+    width:210px;
+  }
+  #cardDominioPerfil{
+    margin-left:0px;
+    margin-top:20px;
+  }
+  #containerPerfil{
+    text-align:center;
+    padding-left:35px;
+  }
+  #desempenhoTitle, #conteudoTitle, #turmaTitle, #cadastroQuestaoTitle{
+    font-size:24pt;
+  }
+  #cardQuestao{
+    padding:0px 50px 0px 50px;
+  }
+  img#migalhas{
+    height:20px;
+  }
+  #questaoTitle{
+    font-size:20pt;
+  }
+  .letra{
+    padding-right:30px;
+  }
+  .progtrckr{
+    display: none;
+  }
+  #cardQuestaoBotoes{
+    text-align: center;
+    padding: auto;
+    margin: auto;
+  }
+  #enunciadoExercicios{
+    font-size:12pt;
+  }
+  #cardQuestaoBotoes button#botaoConfirmar{ 
+    font-size: 10pt;
+    width:120px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  .botaoExercicios{ 
+    font-size: 10pt;
+    width:120px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin: auto;
+  }
+  #alternativas{
+    font-size:10pt;
+  }
+  .alternativa{
+    width:40px;
+  }
+  #imagemEnunciado{
+    width: 150px; 
+  }
+
+}
